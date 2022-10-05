@@ -11,7 +11,178 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+     method="post" >
+      <fieldset class="edit">
+        <legend>
+          Personal information
+        </legend>
+        <label for="x" class="rare">
+          Surname:
+          <input
+            type="text"
+            name="x"
+            required
+            id="x"
+            autocomplete="off"
+          >
+        </label>
+        <label for="e" class="rare">
+          Name:
+          <input
+            type="text"
+            required
+            name="e"
+            id="e"
+            autocomplete="off"
+          >
+        </label>
+        <label for="age" class="rare">
+          How old are You?
+          <input
+            type="number"
+            id="age"
+            name="age"
+            value="12"
+            min="1"
+            max="100"
+            required
+          >
+        </label>
+        <label for="birthday" class="rare">
+          Full date of birth:
+          <input
+            type="date"
+            name="day"
+            id="birthday"
+            min="01;01;1920"
+            max="30;12;2050"
+            required
+          >
+        </label>
+        <label for="term" class="rare">
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="term"
+            id="term"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="edit">
+        <legend>
+          Registration
+        </legend>
+        <label for="email" class="rare">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="email@example.com"
+            autocomplete="off"
+          >
+        </label>
+        <label for="scale">
+          Password:
+          <input
+            type="password"
+            name="number"
+            id="scale"
+            required
+            minlength="8"
+            maxlength="15"
+            autocomplete="off"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="edit">
+        <legend>
+          An interesting fact about you!
+        </legend>
+        <div for="choose" class="rare">
+          Do you love cats?
+          <label>
+            <input
+              type="radio"
+              name="animals"
+              id="choose"
+            >
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="animals"
+              id="chooose"
+            >
+            No
+          </label>
+        </div>
+        <label for="rainbow" class="rare">
+          What is your favorite color?
+          <input
+            type="color"
+            name="rainbow"
+            id="rainbow"
+          >
+        </label>
+        <label for="123" class="rare">
+          What time do you go to bed?
+          <input
+            type="time"
+            name="oclock"
+            id="123"
+          >
+        </label>
+        <label for="1234" class="rare">
+          What are your favorite brand of cars?
+
+          <select name="cars" id="1234"
+            multiple
+          >
+            <option value="brands">Nissan</option>
+            <option value="brands">Toyota</option>
+            <option value="brands">Honda</option>
+          </select>
+        </label>
+        <label for="work" class="rare">
+          How do you rate our work?
+
+          <input
+            type="range"
+            name="scale"
+            id="work"
+            min="5"
+            max="20"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="edit">
+        <legend>
+          Additional info:
+        </legend>
+        <label for="words" class="rare">
+          Comments:
+          <textarea
+            name="Comments"
+            id="words"
+            cols="10"
+            rows="2"
+            autocomplete="off">
+          </textarea>
+        </label>
+        <label for="12" class="rare">
+          Would you recommend us?
+          <select name="choose" id="12">
+            <option value="1">yes</option>
+            <option value="2">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
